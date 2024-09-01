@@ -58,15 +58,48 @@
 // }, 3000);
 
 // Arrow function
-const numbers = [1, 2, 3, 4, 5, 6];
-const squares = numbers.map((element) => Math.pow(element, 2));
-const cubes = numbers.map((element) => Math.pow(element, 3));
-const evenNums = numbers.filter((element) => element % 2 === 0);
-const oddNums = numbers.filter((element) => element % 2 !== 0);
-const total = numbers.reduce((accumulator, element) => accumulator + element);
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const squares = numbers.map((element) => Math.pow(element, 2));
+// const cubes = numbers.map((element) => Math.pow(element, 3));
+// const evenNums = numbers.filter((element) => element % 2 === 0);
+// const oddNums = numbers.filter((element) => element % 2 !== 0);
+// const total = numbers.reduce((accumulator, element) => accumulator + element);
 
-console.log(cubes);
-console.log(squares);
-console.log(evenNums);
-console.log(oddNums);
-console.log(total);
+// console.log(cubes);
+// console.log(squares);
+// console.log(evenNums);
+// console.log(oddNums);
+// console.log(total);
+//object a collection of related properties and or method can represent real world object (people, place)
+
+const person1 = {
+  firstName: "Bivek",
+  lastName: "Baral",
+  age: 30,
+  isEmployed: true,
+  sayHello: function () {
+    console.log("Hi I'm bivek");
+  },
+};
+console.log(person1.firstName);
+console.log(person1.lastName);
+console.log(person1.age);
+console.log(person1.isEmployed);
+
+const person2 = {
+  firstName: "Ram",
+  secondName: "Bahadur",
+  age: 40,
+  isEmployed: false,
+  sayHello: function () {
+    console.log("Hi I'm Ram");
+  },
+};
+
+console.log(person2.firstName);
+console.log(person2.age);
+console.log(person2.secondName);
+console.log(person2.isEmployed);
+
+person1.sayHello();
+person2.sayHello();
